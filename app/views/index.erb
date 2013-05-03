@@ -1,0 +1,10 @@
+<div class="container">
+  <h2>Flickr Jr.</h2>
+  <% @photos.each do |photo| %>
+    <img src="/../<%=photo.filename%>"><br>
+  <% end %>
+
+  <a href='/upload'>Upload photo</a>
+
+
+</div>
