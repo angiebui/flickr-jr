@@ -1,5 +1,6 @@
 <div class="container">
   <h2><%= @album.title %>: Photos</h2>
+  <p>Author: <a href="/user/<%=@album.user_id%>/albums"><%= @album.user.name %></a><p>
   <div class="add-to-set">
    <form action='/album/<%=@album.id%>' method="post" enctype="multipart/form-data">
       <input type="file" name="filename">
