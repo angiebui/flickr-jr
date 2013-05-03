@@ -14,7 +14,7 @@ gem 'mini_magick'
 
 gem 'activesupport'
 gem 'activerecord'
-
+gem 'bcrypt-ruby'
 gem 'rake'
 
 gem 'shotgun'

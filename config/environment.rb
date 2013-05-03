@@ -20,8 +20,8 @@ require "sinatra/reloader" if development?
 
 require 'erb'
 require 'carrierwave'
-require 'carrierwave/orm/activerecord'
 require 'carrierwave/processing/mini_magick'
+require 'carrierwave/orm/activerecord'
 
 
 # Some helper constants for path-centric logic
