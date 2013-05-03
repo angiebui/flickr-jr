@@ -13,6 +13,8 @@ nav {
   width: 100%;
   position: absolute;
   top: 0;
+  height: 30px;
+  position: fixed;
 }
 
 nav form {
@@ -30,4 +32,19 @@ nav #submit p{
   margin: 0;
 }
 
+.signed-in {
+  float:right;
+  height: 30px;
+}
+
+.signed-in li {
+  display: inline-block;
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+.signed-in a {
+  text-decoration:none;
+  color: gray;
+}
 

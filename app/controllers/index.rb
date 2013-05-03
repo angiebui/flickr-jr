@@ -38,3 +38,8 @@ end
 
 get 'album/:albumid/:photoid' do
 end
+
+get '/logout' do
+  session.clear
+  redirect to ('/')
+end

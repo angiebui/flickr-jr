@@ -27,7 +27,12 @@
       <input type="submit" value="Login">
     </form>
     <% else %>
-    <a id="submit" href="/upload"><p>Upload Photos</p></a>
+    <div class="signed-in">
+      <ul>
+        <li><a id="nav-bar" href="/upload">Upload</a></li>
+        <li><a id="nav-bar" href="/logout">Logout</a></li>
+      </ul>
+    </div>
     <% end %>
   </nav>
   <%= yield %>
