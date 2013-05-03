@@ -1,6 +1,12 @@
 <div class="container">
-  <h2><%= @user.name %>'s Albums</h2>
+  <h2><%= @user.name %>'s Sets</h2>
+  <div class="add-set">
+   <form action='/album' method="get"> 
+      <input type="submit" value="Create a set">
+    </form>
+  </div>
   <% @albums.each do |album| %>
     <p><a href="/album/<%=album.id%>"><%= album.title %></a></p>
   <% end %>
+
 </div>

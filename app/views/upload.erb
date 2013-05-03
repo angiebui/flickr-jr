@@ -1,7 +1,14 @@
 <div class="container">
+  <div class="errors">	
+   <% if @errors %>
+   	<p><%= @errors %></p>
+   <% end %>
+  </div>
+
   <h2> Upload Image </h2>
   <form action="/upload" method="post" enctype="multipart/form-data">
     <input type="file" name="filename"><br><br>
-    <input type="submit" value="Upload!">
+    Album: <input type="text" name="title"><br><br>
+    <input type="submit" value="Upload">
   </form>
 </div>
