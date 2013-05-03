@@ -1,6 +1,8 @@
 require 'bcrypt'
 
 class User < ActiveRecord::Base
+  include BCrypt
+
   has_many :photos
   has_many :albums
 

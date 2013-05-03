@@ -7,3 +7,27 @@
 th {
   text-align: left;
 }
+
+nav {
+  background-color: #e8e8e8;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+nav form {
+  position: relative;
+  float: right;
+}
+
+nav #submit{
+  position: relative;
+  float: right;
+  margin: 0;
+}
+
+nav #submit p{
+  margin: 0;
+}
+
+

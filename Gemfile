@@ -8,13 +8,13 @@ gem 'sinatra'
 gem 'sinatra-contrib'
 
 # Use Thin for our web server
+gem 'bcrypt-ruby'
 gem 'thin'
 gem 'carrierwave'
 gem 'mini_magick'
 
 gem 'activesupport'
 gem 'activerecord'
-gem 'bcrypt-ruby'
 gem 'rake'
 
 gem 'shotgun'
