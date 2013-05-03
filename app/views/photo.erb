@@ -1,0 +1,6 @@
+<div class="container">
+  <h2><%= @album.title %> Photos</h2>
+  <% @album.photos.each do |photo| %>
+    <p><img src="/../<%=photo.filename%>"></p><br>
+  <% end %>
+</div>
