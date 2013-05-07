@@ -12,6 +12,7 @@ post "/upload" do
     photo = album.photos.new
     photo.filename.store!(params[:filename])
     photo.save
+    
     redirect to("/album/#{album.id}")
   else
     @errors = "You must login or signup to upload"
@@ -43,3 +44,4 @@ post '/album/:id' do
 	redirect to("/album/#{params[:id]}") #optimize so that it lands in that image specifically in album?
 end
 
+# support multiple uploads

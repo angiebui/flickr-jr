@@ -3,7 +3,7 @@ get '/' do
   erb :index
 end
 
-post '/' do #login 
+post '/' do 
   @user = User.authenticate(params[:login][:email], params[:login][:password])
   if @user
     session[:id] = @user.id

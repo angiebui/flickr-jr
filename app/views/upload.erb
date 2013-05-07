@@ -7,8 +7,10 @@
 
   <h2> Upload Image </h2>
   <form action="/upload" method="post" enctype="multipart/form-data">
-    <input type="file" name="filename"><br><br>
-    Album: <input type="text" name="title"><br><br>
+    <ul>
+    <%= erb :_photo_upload, :layout => false %>
+    <button id="plus-photo" type="button"> + </button><br><br>
     <input type="submit" value="Upload">
+    </ul>
   </form>
 </div>

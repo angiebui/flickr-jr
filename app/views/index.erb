@@ -1,6 +1,8 @@
 <div class="container">
   <h2>Recently Uploaded Photos</h2>
+  <div class="images">
   <% @photos.each do |photo| %>
-    <a href="/album/<%=photo.album_id%>"><img src="/../<%=photo.filename%>"></a><br>
+    <li><a href="/album/<%=photo.album_id%>"><img src="/../<%=photo.filename%>"></a></li>
   <% end %>
+</div>
 </div>
